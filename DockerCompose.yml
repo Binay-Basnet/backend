@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+
+  backend:
+    container_name: backend
+    image: backend:latest
+    # network_mode: "host"
+    environment:
+      - HOST_MACHINE=host.docker.internal
+    ports:
+      - 5000:5000
+    networks:
+      - my_network
+
+  frontend:
+    image: frontend:latest
+    container_name: frontend
+    environment:
+      - HOST_MACHINE=host.docker.internal
+    ports:
+      - 3000:3000
+    networks:
+      - my_network
+      
+networks:
+  my_network:
+    driver: bridge
+
+  

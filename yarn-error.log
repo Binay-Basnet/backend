@@ -1,0 +1,53 @@
+Arguments: 
+  /home/iamnitesh/.nvm/versions/node/v18.6.0/bin/node /usr/bin/yarn install
+
+PATH: 
+  /home/iamnitesh/.nvm/versions/node/v18.6.0/bin:/home/iamnitesh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/bin:/home/iamnitesh/go/bin:/home/iamnitesh/go/bin:/usr/local/go/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.6.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/axios: ETIMEDOUT
+      at Timeout._onTimeout (/usr/lib/node_modules/yarn/lib/cli.js:141550:19)
+      at listOnTimeout (node:internal/timers:564:17)
+      at process.processTimers (node:internal/timers:507:7)
+
+npm manifest: 
+  {
+    "name": "backendapp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1", 
+      "start":"node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "axios": "^0.27.2",
+      "cors": "^2.8.5",
+      "dotenv": "^16.0.3",
+      "express": "^4.18.1",
+      "node-fetch": "^3.2.5",
+      "path": "^0.12.7",
+      "uuid": "^8.3.2",
+      "uuidv4": "^6.2.13"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.22"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
